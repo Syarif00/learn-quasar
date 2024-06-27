@@ -25,7 +25,15 @@ function initmap() {
       L.latLng(-7.761715908131458, 110.40934551429152),
     ],
     routeWhileDragging: true,
-  }).addTo(map);
+  })
+    .on("routeselected", function (e) {
+      var route = e.route;
+      alert(
+        "Showing route between waypoints:\n" +
+          JSON.stringify(route.inputWaypoints, null, 2)
+      );
+    })
+    .addTo(map);
 }
 
 onMounted(() => {
