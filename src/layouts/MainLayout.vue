@@ -13,7 +13,7 @@
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
-        <div>Quasar v{{ $q.screen }}</div>
+        <div>Trial Quasar</div>
       </q-toolbar>
     </q-header>
 
@@ -45,9 +45,9 @@ defineOptions({
 
 const linksList = [
   {
-    title: "Docs",
+    title: "Routing",
     caption: "quasar.dev",
-    icon: "school",
+    icon: "dashboard",
     link: "https://quasar.dev",
   },
   {
