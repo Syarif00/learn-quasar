@@ -8,24 +8,32 @@
 <script setup>
 import { onMounted } from "vue";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
-import { IRouter, IGeocoder, LineOptions } from "leaflet-routing-machine";
+import * as L from "leaflet";
+import "leaflet.markercluster";
+// import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
+// import { IRouter, IGeocoder, LineOptions } from "leaflet-routing-machine";
+
+// data GeoJson
+import datas from "../data/maps.js";
 
 // Create Map
 function initmap() {
   var map = L.map("mymap", {
-    center: [51.505, -0.09],
+    center: [-7.761428487552167, 110.3942887717749],
     zoom: 13,
   });
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-  L.Routing.control({
-    waypoints: [
-      L.latLng(-7.761428487552167, 110.3942887717749),
-      L.latLng(-7.761715908131458, 110.40934551429152),
-    ],
-    routeWhileDragging: true,
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
+
+  var markers = L.markerClusterGroup();
+  var marker = L.geoJSON(datas);
+
+  markers.addLayer(marker);
+  map.addLayer(markers);
 }
 
 onMounted(() => {
