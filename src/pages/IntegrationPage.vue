@@ -1,18 +1,18 @@
 <template>
   <q-page>
     <div>
-      <div id="mymap" style="height: 100vh"></div></div
+      <div id="mymap" style="height: 500px"></div></div
   ></q-page>
 </template>
 
 <script setup>
 import { onMounted } from "vue";
 import "leaflet/dist/leaflet.css";
-import L, { marker } from "leaflet";
+import L from "leaflet";
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 import { IRouter, IGeocoder, LineOptions } from "leaflet-routing-machine";
 
-//  Map
+// Create Map
 function initmap() {
   var map = L.map("mymap", {
     center: [51.505, -0.09],
