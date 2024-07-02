@@ -8,14 +8,14 @@
 <script setup>
 import { onMounted } from "vue";
 import "leaflet/dist/leaflet.css";
-import L, { marker } from "leaflet";
+import L from "leaflet";
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 import { IRouter, IGeocoder, LineOptions } from "leaflet-routing-machine";
 
 //  Map
 function initmap() {
   var map = L.map("mymap", {
-    center: [51.505, -0.09],
+    center: [-7.761428487552167, 110.3942887717749],
     zoom: 13,
   });
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
@@ -25,15 +25,7 @@ function initmap() {
       L.latLng(-7.761715908131458, 110.40934551429152),
     ],
     routeWhileDragging: true,
-  })
-    .on("routeselected", function (e) {
-      var route = e.route;
-      alert(
-        "Showing route between waypoints:\n" +
-          JSON.stringify(route.inputWaypoints, null, 2)
-      );
-    })
-    .addTo(map);
+  }).addTo(map);
 }
 
 onMounted(() => {
