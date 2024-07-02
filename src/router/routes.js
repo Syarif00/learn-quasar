@@ -4,14 +4,17 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: () => import("pages/IndexPage.vue") },
-      { path: "integration", component: () => import("pages/IndexPage.vue") },
+      {
+        path: "integration",
+        component: () => import("pages/IntegrationPage.vue"),
+      },
       {
         path: "routing-services",
-        component: () => import("pages/IndexPage.vue"),
+        component: () => import("pages/RoutingPage.vue"),
       },
       {
         path: "marker-cluster",
-        component: () => import("pages/IndexPage.vue"),
+        component: () => import("pages/MarkerCluster.vue"),
       },
     ],
   },
