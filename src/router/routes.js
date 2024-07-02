@@ -10,7 +10,7 @@ const routes = [
       },
       {
         path: "routing-services",
-        component: () => import("pages/IndexPage.vue"),
+        component: () => import("pages/RoutingPage.vue"),
       },
       {
         path: "marker-cluster",
