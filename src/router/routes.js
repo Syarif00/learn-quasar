@@ -16,6 +16,10 @@ const routes = [
         path: "marker-cluster",
         component: () => import("pages/MarkerCluster.vue"),
       },
+      {
+        path: "form",
+        component: () => import("pages/FormPage.vue"),
+      },
     ],
   },
 
