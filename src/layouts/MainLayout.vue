@@ -66,7 +66,13 @@ const linksList = [
     title: "Marker Cluster",
     caption: "Cluster",
     icon: "workspaces",
-    link: "marker-cluster",
+    link: "/marker-cluster",
+  },
+  {
+    title: "Form",
+    caption: "Form Components",
+    icon: "description",
+    link: "/form",
   },
 ];
 
