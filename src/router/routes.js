@@ -20,6 +20,10 @@ const routes = [
         path: "form",
         component: () => import("pages/FormPage.vue"),
       },
+      {
+        path: "crud",
+        component: () => import("pages/CRUD.vue"),
+      },
     ],
   },
 

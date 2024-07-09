@@ -74,6 +74,12 @@ const linksList = [
     icon: "description",
     link: "/form",
   },
+  {
+    title: "CRUD",
+    caption: "CRUD",
+    icon: "file_copy",
+    link: "/crud",
+  },
 ];
 
 const leftDrawerOpen = ref(false);
