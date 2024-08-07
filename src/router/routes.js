@@ -24,6 +24,10 @@ const routes = [
         path: "crud",
         component: () => import("pages/CRUD.vue"),
       },
+      {
+        path: "stop-point-analysis",
+        component: () => import("pages/StopPoint.vue"),
+      },
     ],
   },
 

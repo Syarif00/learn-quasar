@@ -80,6 +80,12 @@ const linksList = [
     icon: "file_copy",
     link: "/crud",
   },
+  {
+    title: "Stop Point Analysis",
+    caption: "Stop Point Analysis",
+    icon: "description",
+    link: "/stop-point-analysis",
+  },
 ];
 
 const leftDrawerOpen = ref(false);
