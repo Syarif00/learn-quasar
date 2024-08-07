@@ -28,6 +28,10 @@ const routes = [
         path: "stop-point-analysis",
         component: () => import("pages/StopPoint.vue"),
       },
+      {
+        path: "pinia",
+        component: () => import("pages/PiniaPage.vue"),
+      },
     ],
   },
 

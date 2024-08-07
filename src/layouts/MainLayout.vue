@@ -86,6 +86,12 @@ const linksList = [
     icon: "description",
     link: "/stop-point-analysis",
   },
+  {
+    title: "Pinia",
+    caption: "State Management",
+    icon: "description",
+    link: "/pinia",
+  },
 ];
 
 const leftDrawerOpen = ref(false);
