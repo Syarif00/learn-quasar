@@ -32,6 +32,10 @@ const routes = [
         path: "pinia",
         component: () => import("pages/PiniaPage.vue"),
       },
+      {
+        path: "calendar",
+        component: () => import("pages/FullCalendar.vue"),
+      },
     ],
   },
 

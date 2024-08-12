@@ -92,6 +92,12 @@ const linksList = [
     icon: "description",
     link: "/pinia",
   },
+  {
+    title: "Calendar",
+    caption: "Full Calendar",
+    icon: "today",
+    link: "/calendar",
+  },
 ];
 
 const leftDrawerOpen = ref(false);
