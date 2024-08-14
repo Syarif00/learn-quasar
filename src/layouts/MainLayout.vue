@@ -98,6 +98,18 @@ const linksList = [
     icon: "today",
     link: "/calendar",
   },
+  {
+    title: "Web Scraper",
+    caption: "Puppeter",
+    icon: "today",
+    link: "/scrape",
+  },
+  {
+    title: "Vue Drag and Drop",
+    caption: "vuedraggable",
+    icon: "today",
+    link: "/dnd",
+  },
 ];
 
 const leftDrawerOpen = ref(false);

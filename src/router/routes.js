@@ -36,6 +36,14 @@ const routes = [
         path: "calendar",
         component: () => import("pages/FullCalendar.vue"),
       },
+      {
+        path: "scrape",
+        component: () => import("pages/WebScrapping.vue"),
+      },
+      {
+        path: "dnd",
+        component: () => import("pages/DragAndDrop.vue"),
+      },
     ],
   },
 
